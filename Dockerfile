@@ -1,7 +1,7 @@
-FROM node:current-alpine
+FROM node:22
 WORKDIR /usr/src/app
 COPY docker/package*.json .
-RUN apk add python3 make g++
+RUN apt-get install python3 make g++ git
 RUN npm install
 COPY . .
 COPY docker .

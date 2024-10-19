@@ -9,3 +9,6 @@ services:
     restart: unless-stopped
     volumes:
       - /path/to/where/db/should/go:/mnt/db
+    environment:
+      DB_PATH: /mnt/db/mood.db
+      ADMINPASS: PLEASE_CHANGE_ME

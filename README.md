@@ -22,8 +22,7 @@ Webpage for tracking your mood (pleasantness / energy).
 ### As a standalone Docker container
 1. Install `docker compose` if it is not already installed.
 2. Create a new user or pick an existing one to run the mood tracker. Pick a directory for the database which that user can read and write to.
-3. Edit `docker-compose.yaml` to set the directory where the Database goes and the UID/GID for the user that can access it.
-4. Edit the `.env` file in the `docker` folder to change the default token/password
+3. Edit `docker-compose.yaml` to set the directory where the Database goes and the UID/GID for the user that can access it and change the default token/password.
 5. The default port is 8228 (CAT -> 228 on a phone dialpad). If you want to change that, edit `app.js`in the `docker` folder
 6. Run `sudo docker compose up` to start the moodtracker, or with the `-d` flag added, to start it as a service.
 
